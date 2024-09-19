@@ -7,7 +7,7 @@ class Weapon(pygame.sprite.Sprite):
         
         
         #graphic
-        full_path = f'/home/arthurbrinkmann/dev/zelda/graphics/weapons/{player.weapon}/{direction}.png'
+        full_path = f'/home/arthurbrinkmann/dev/personalprojects/ZeldaLikeGame/graphics/weapons/{player.weapon}/{direction}.png'
         self.image = pygame.image.load(full_path).convert_alpha()
 
         #placement
