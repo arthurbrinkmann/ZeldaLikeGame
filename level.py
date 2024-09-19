@@ -25,13 +25,13 @@ class Level:
 
     def create_map(self):
         layouts = {
-                'boundary': import_csv_layout('/home/arthurbrinkmann/dev/zelda/graphics/map_FloorBlocks.csv'),
-                'grass' : import_csv_layout('/home/arthurbrinkmann/dev/zelda/graphics/map_Grass.csv'),
-                'object': import_csv_layout ('/home/arthurbrinkmann/dev/zelda/graphics/map_Objects.csv')
+                'boundary': import_csv_layout('/home/arthurbrinkmann/dev/personalprojects/ZeldaLikeGame/graphics/map_FloorBlocks.csv'),
+                'grass' : import_csv_layout('/home/arthurbrinkmann/dev/personalprojects/ZeldaLikeGame/graphics/map_Grass.csv'),
+                'object': import_csv_layout ('/home/arthurbrinkmann/dev/personalprojects/ZeldaLikeGame/graphics/map_Objects.csv')
         }
         graphics = {
-            'grass': import_folder('/home/arthurbrinkmann/dev/zelda/graphics/Grass'),
-            'objects': import_folder('/home/arthurbrinkmann/dev/zelda/graphics/objects')
+            'grass': import_folder('/home/arthurbrinkmann/dev/personalprojects/ZeldaLikeGame/graphics/Grass'),
+            'objects': import_folder('/home/arthurbrinkmann/dev/personalprojects/ZeldaLikeGame/graphics/objects')
         }
 
 
@@ -81,7 +81,7 @@ class YSortCameraGroup(pygame.sprite.Group):
         self.offset = pygame.math.Vector2()
 
         # creating the floor 
-        self.floor_surf = pygame.image.load('/home/arthurbrinkmann/dev/zelda/graphics/ground.png').convert()
+        self.floor_surf = pygame.image.load('/home/arthurbrinkmann/dev/personalprojects/ZeldaLikeGame/graphics/ground.png').convert()
         self.floor_rect = self.floor_surf.get_rect(topleft = (0,0))
 
     def custom_draw(self,player):
